@@ -2,8 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "react-hooks-practice": "apps/react-hooks-practice",
-    "react-hooks-practice-e2e": "apps/react-hooks-practice-e2e",
     "type-challenges": "libs/type-challenges"
   }
 }
