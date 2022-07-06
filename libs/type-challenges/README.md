@@ -6,6 +6,6 @@ This library was generated with [Nx](https://nx.dev).
 
 Run `nx build type-challenges` to build the library.
 
-## Running unit tests
+## Links
 
-Run `nx test type-challenges` to execute the unit tests via [Jest](https://jestjs.io).
+[类型挑战](https://github.com/type-challenges/type-challenges)
