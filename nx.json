@@ -4,9 +4,6 @@
   "affected": {
     "defaultBase": "main"
   },
-  "cli": {
-    "defaultCollection": "@nrwl/react"
-  },
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
@@ -22,14 +19,6 @@
         "accessToken": "Yjk3ZjQ2NTYtMjAxOC00ZGMxLWEzOWItMDZjOGE2MDEzNmU4fHJlYWQtd3JpdGU="
       }
     }
-  },
-  "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
   },
   "generators": {
     "@nrwl/react": {
@@ -47,5 +36,10 @@
       }
     }
   },
-  "defaultProject": "type-challenges"
+  "defaultProject": "type-challenges",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  }
 }
