@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TIP: this inside an inline event handler in HTML refers to “this element” -->
+    <!-- 图片找不到时，移除这张图片 -->
+    <img src="./109689_large.png" onerror="this.remove()" />
+    <img src="./not_found.jpeg" onerror="this.remove()" />
+
+    <!-- 图片加载失败的时候显示回退的图片 -->
+    <img
+      src="./not_found.jpeg"
+      onerror="this.onerror=null; this.src='./457207_large.png'"
+    />
+
+    <!-- 打开下面的注释，找不到回退的图片会无限加载 -->
+    <!-- <img src="./not_found.jpeg" onerror="this.src='./404.png'" /> -->
+
+    <img
+      src="./not_found.jpeg"
+      onerror="this.onerror=null; this.src='./404.png'"
+    />
+  </body>
+</html>
