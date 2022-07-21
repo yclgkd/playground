@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>获取长宽高</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 40000px"></div>
+  </body>
+  <script>
+    // 网页的宽度，包括了纵向滚动条的宽度（如果存在的话）
+    console.log('innerWidth', window.innerWidth);
+    // 网页的高度，包括了横向滚动条的高度（如果存在的话）
+    console.log('innerHeight:', window.innerHeight);
+
+    // 浏览器的宽度
+    console.log('outerWidth', window.outerWidth);
+    // 浏览器的高度
+    console.log('outerHeight', window.outerHeight);
+
+    // css width + css padding + scrollbar width, 如果是根元素则返回视图的宽度
+    console.log('clientWidth', document.documentElement.clientWidth);
+    // css height + css padding + scrollbar width，如果是根元素则返回视图的高度
+    console.log('clientHeight', document.documentElement.clientHeight);
+
+    // 显示器的宽高
+    console.log('screen width', window.screen.width);
+    console.log('screen height', window.screen.height);
+  </script>
+</html>
