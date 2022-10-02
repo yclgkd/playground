@@ -1,0 +1,26 @@
+.message-wrap {
+  position: relative;
+}
+
+.message-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  margin: 100px 100px;
+  padding: 20px 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-width: 3px;
+  text-align: center;
+  /* 阴影效果 X 轴偏移量、Y 轴偏移量、模糊半径、扩散半径和颜色 */
+  box-shadow: 10px -10px 0 -3px white, 10px -10px, 20px -20px 0 -3px white,
+    20px -20px;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    top: -20px;
+    left: 20px;
+    box-shadow: 0 0 0 -3px white, 0 0, 0 0 0 -3px white, 0 0;
+  }
+}

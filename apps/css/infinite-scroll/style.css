@@ -1,0 +1,33 @@
+.c {
+  position: relative;
+  background: #cccccc;
+  max-height: 225px; /*height to show an exact number of spans  - in this case span is 45px (40 height plus 5 margin as margins collapse) and we are showing 5 spans to start */
+  float: left;
+  width: 315px;
+  height: 225px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.card-home {
+  position: absolute;
+  top: 0;
+  animation: scroll 10s linear 1s infinite;
+  &:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+}
+span {
+  min-width: 290px;
+  min-height: 40px;
+  display: block;
+  color: white;
+  margin: 5px;
+  background: blue;
+}
+@keyframes scroll {
+  // is the number of spans (in this case 8) multiplied by span height (45px as described above)
+  100% {
+    top: var(--to-top);
+  } /* top */
+}
