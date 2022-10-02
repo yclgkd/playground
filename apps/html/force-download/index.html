@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>force download</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <a href="./file.pdf" download>pdf 强制下载</a>
-    <a href="./file.pdf">pdf 预览</a>
+    <div class="container">
+      <a href="./file.pdf" download="就叫这个名.pdf"
+        >pdf 强制下载，修改默认文件名</a
+      >
+      <a href="./file.pdf" download>pdf 强制下载</a>
+      <a href="./file.pdf">pdf 预览</a>
+    </div>
   </body>
 </html>
